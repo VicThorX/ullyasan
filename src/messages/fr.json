@@ -79,6 +79,14 @@
     "infoHours": "Lundi au Vendredi : 08h00 - 17h00 (GMT-3)",
     "formPlaceholderMessage": "Veuillez préciser les produits d'intérêt, les volumes d'achat estimés (tonnes/palettes) et le port de destination souhaité..."
   },
+  "home": {
+    "excellenceTitle": "L'excellence argentine des produits de la mer",
+    "excellenceDesc1": "Ull Yasan est synonyme de qualité et de prestige dans l'exportation de produits de la mer de Patagonie. Pêchés dans les eaux froides et pures de l'Atlantique Sud (FAO 41), nos produits respectent les contrôles de qualité internationaux les plus stricts.",
+    "excellenceDesc2": "Depuis nos usines de transformation agréées et nos quais stratégiques à Puerto Madryn, Chubut, nous exportons vers l'Europe, l'Amérique et l'Asie avec la certification HACCP et les normes de la FDA, garantissant une fraîcheur inégalée à chaque lot.",
+    "ctaTitle": "Faites passer votre entreprise au niveau supérieur",
+    "ctaSubtitle": "Contactez notre équipe commerciale et demandez un devis personnalisé sur volume. Nous approvisionnons les importateurs, distributeurs et chaînes de restauration à l'échelle mondiale.",
+    "ctaButton": "Parlons-en aujourd'hui"
+  },
   "footer": {
     "tagline": "Qualité, fraîcheur et confiance patagoniennes au service des marchés les plus exigeants du monde.",
     "rights": "Tous droits réservés.",

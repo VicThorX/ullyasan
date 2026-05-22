@@ -79,6 +79,14 @@
     "infoHours": "Montag bis Freitag: 08:00 - 17:00 Uhr (GMT-3)",
     "formPlaceholderMessage": "Bitte geben Sie die gewünschten Produkte, das geschätzte Einkaufsvolumen (Tonnen/Paletten) und den Zielhafen an..."
   },
+  "home": {
+    "excellenceTitle": "Argentinische Exzellenz bei Meeresfrüchten",
+    "excellenceDesc1": "Ull Yasan steht für Qualität und Prestige beim Export von patagonischen Meeresfrüchten. Gefangen in den kalten und reinen Gewässern des Südatlantiks (FAO 41), entsprechen unsere Produkte den strengsten internationalen Qualitätskontrollen.",
+    "excellenceDesc2": "Von unseren zugelassenen Verarbeitungsbetrieben und strategischen Anlegestellen in Puerto Madryn, Chubut, exportieren wir nach Europa, Amerika und Asien mit HACCP-Zertifizierung und nach FDA-Standards, was eine unübertroffene Frische in jeder Charge garantiert.",
+    "ctaTitle": "Bringen Sie Ihr Unternehmen auf die nächste Stufe",
+    "ctaSubtitle": "Setzen Sie sich mit unserem Vertriebsteam in Verbindung und fordern Sie ein maßgeschneidertes Mengenangebot an. Wir beliefern Importeure, Distributoren und Restaurantketten weltweit.",
+    "ctaButton": "Kontaktieren Sie uns heute"
+  },
   "footer": {
     "tagline": "Qualität, Frische und Vertrauen aus Patagonien für die anspruchsvollsten Märkte der Welt.",
     "rights": "Alle Rechte vorbehalten.",

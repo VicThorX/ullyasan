@@ -79,6 +79,14 @@
     "infoHours": "Lunes a Viernes: 08:00 - 17:00 (GMT-3)",
     "formPlaceholderMessage": "Por favor, indique los productos de interés, volúmenes de compra estimados (toneladas/pallets) y puerto de destino..."
   },
+  "home": {
+    "excellenceTitle": "Excelencia argentina en productos del mar",
+    "excellenceDesc1": "Ull Yasan es sinónimo de calidad y prestigio en la exportación de productos marítimos de la Patagonia. Capturados en las frías y puras aguas del Atlántico Sur (FAO 41), nuestros productos cumplen con los más estrictos controles de calidad internacionales.",
+    "excellenceDesc2": "Desde nuestras plantas de procesamiento homologadas y muelles estratégicos en Puerto Madryn, Chubut, exportamos a Europa, América y Asia con certificación HACCP y estándares de la FDA, garantizando una frescura insuperable en cada lote.",
+    "ctaTitle": "Lleva tu negocio al siguiente nivel",
+    "ctaSubtitle": "Ponte en contacto con nuestro equipo comercial y solicita una cotización personalizada por volumen. Abastecemos importadores, distribuidores y cadenas de restauración a nivel global.",
+    "ctaButton": "Hablemos hoy"
+  },
   "footer": {
     "tagline": "Calidad, frescura y confianza patagónica en los mercados más exigentes del mundo.",
     "rights": "Todos los derechos reservados.",

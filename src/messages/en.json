@@ -79,6 +79,14 @@
     "infoHours": "Monday to Friday: 08:00 AM - 05:00 PM (GMT-3)",
     "formPlaceholderMessage": "Please specify the products you are interested in, estimated volumes (tons/pallets), and target port of destination..."
   },
+  "home": {
+    "excellenceTitle": "Argentine Excellence in Wild-Caught Seafood",
+    "excellenceDesc1": "Ull Yasan is synonymous with quality and prestige in the export of Patagonian seafood. Harvested from the cold, pristine waters of the South Atlantic (FAO 41), our products comply with the most stringent international food safety and quality controls.",
+    "excellenceDesc2": "From our fully certified processing facilities and strategic berths in Puerto Madryn, Chubut, we export to Europe, North America, and Asia under HACCP guidelines and FDA regulations, ensuring unparalleled freshness in every batch.",
+    "ctaTitle": "Take Your Business to the Next Level",
+    "ctaSubtitle": "Get in touch with our export sales team to request a customized volume quote. We supply premium importers, B2B distributors, and high-end restaurant chains globally.",
+    "ctaButton": "Let's Connect Today"
+  },
   "footer": {
     "tagline": "Patagonian quality, freshness, and trust served to the world's most demanding markets.",
     "rights": "All rights reserved.",

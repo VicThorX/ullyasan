@@ -93,6 +93,15 @@ export interface SEODict {
   contactDesc: string;
 }
 
+export interface HomeDict {
+  excellenceTitle: string;
+  excellenceDesc1: string;
+  excellenceDesc2: string;
+  ctaTitle: string;
+  ctaSubtitle: string;
+  ctaButton: string;
+}
+
 export interface Dictionary {
   nav: NavigationDict;
   hero: HeroDict;
@@ -101,6 +110,7 @@ export interface Dictionary {
   catalog: CatalogDict;
   productDetail: ProductDetailDict;
   contact: ContactDict;
+  home: HomeDict;
   footer: FooterDict;
   seo: SEODict;
 }
