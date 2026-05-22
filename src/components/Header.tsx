@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { Locale, locales } from '@/lib/dictionary';
 import { NavigationDict } from '@/types/dictionary';
 
@@ -17,7 +17,7 @@ export default function Header({ lang, dict }: HeaderProps) {
   const [langDropdownOpen, setLangDropdownOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
-  const router = useRouter();
+
 
   // Listen to scroll to update background opacity
   useEffect(() => {
