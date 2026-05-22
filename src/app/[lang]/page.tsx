@@ -54,152 +54,130 @@ export default async function HomePage({ params }: PageProps) {
 
   return (
     <div className="flex flex-col w-full bg-ocean-black">
-      {/* 1. HERO SECTION (Split Layout) */}
-      <section className="relative min-h-[90vh] lg:min-h-screen w-full overflow-hidden bg-ocean-black pt-24 lg:pt-0">
+      {/* 1. HERO SECTION (Split Layout - Perfect 50/50 Viewport Split) */}
+      <section className="relative min-h-[90vh] lg:min-h-screen w-full overflow-hidden bg-ocean-black pt-24 lg:pt-0 grid grid-cols-1 lg:grid-cols-2 items-stretch">
         
-        {/* Right logistics image (Absolute on Desktop, bleeds to right edge of viewport) */}
-        <div className="absolute top-0 right-0 lg:w-[46vw] xl:w-[48vw] h-full hidden lg:block overflow-hidden bg-ocean-black group z-0">
+        {/* Left column (Text content centered horizontally within its 50% viewport pane) */}
+        <div className="w-full flex flex-col justify-center items-center py-16 lg:py-24 bg-ocean-black relative z-10">
+          <div className="max-w-2xl w-full px-4 sm:px-8 md:px-12 xl:px-16 animate-slide-up text-left">
+            <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary-400 bg-primary-950/60 border border-primary-800/40 mb-6">
+              {lang === 'es' ? 'Exportación Global' : 'Global Export'}
+            </span>
+            
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-tight">
+              {lang === 'es' ? (
+                <>
+                  Distribuidor internacional de <span className="text-primary-400">pescados y mariscos</span>
+                </>
+              ) : lang === 'en' ? (
+                <>
+                  International distributor of <span className="text-primary-400">premium seafood</span>
+                </>
+              ) : lang === 'pt' ? (
+                <>
+                  Distribuidor internacional de <span className="text-primary-400">peixes e frutos do mar</span>
+                </>
+              ) : lang === 'de' ? (
+                <>
+                  Internationaler Händler für <span className="text-primary-400">Fisch & Meeresfrüchte</span>
+                </>
+              ) : (
+                <>
+                  Distributeur international de <span className="text-primary-400">poissons et crustacés</span>
+                </>
+              )}
+            </h1>
+            
+            <p className="mt-6 text-base sm:text-lg md:text-xl font-light text-slate-300 leading-relaxed max-w-xl">
+              {dict.hero.subtitle}
+            </p>
+            
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+              <Link
+                href={`/${lang}/productos`}
+                className="flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl shadow-lg transition-all duration-200 text-white bg-ice-teal hover:bg-ice-teal-dark hover:shadow-xl hover:-translate-y-0.5 text-center"
+              >
+                {dict.hero.ctaCatalog}
+              </Link>
+              <Link
+                href={`/${lang}/contacto`}
+                className="flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl border border-slate-700 hover:border-slate-500 text-white bg-white/5 hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 text-center"
+              >
+                {dict.hero.ctaContact}
+              </Link>
+            </div>
+
+            {/* Quick access cards (Lower Left Selector) */}
+            <div className="mt-12 md:mt-16 border-t border-slate-800/80 pt-8">
+              <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
+                {lang === 'es'
+                  ? 'Acceso Rápido por Conservación'
+                  : lang === 'en'
+                  ? 'Quick Access by Preservation'
+                  : lang === 'pt'
+                  ? 'Acesso Rápido por Conservação'
+                  : lang === 'de'
+                  ? 'Schnellzugriff nach Konservierung'
+                  : 'Accès Rapide par Conservation'}
+              </p>
+              
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link
+                  href={`/${lang}/productos?filter=frozen`}
+                  className="group flex items-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-blue-950/60 text-blue-400 flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-white uppercase tracking-wider">
+                      {lang === 'es' ? 'Congelados' : lang === 'en' ? 'Frozen Line' : lang === 'pt' ? 'Congelados' : lang === 'de' ? 'Gefroren' : 'Surgelés'}
+                    </p>
+                    <p className="text-[10px] text-slate-400 mt-0.5">
+                      {lang === 'es' ? 'IQF e Interfoliados' : lang === 'en' ? 'IQF & Interleaved' : lang === 'pt' ? 'IQF e Interfolhados' : lang === 'de' ? 'IQF & Einzelblöcke' : 'IQF & Intercalaires'}
+                    </p>
+                  </div>
+                </Link>
+
+                <Link
+                  href={`/${lang}/productos?filter=fresh`}
+                  className="group flex items-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-emerald-950/60 text-emerald-400 flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold text-white uppercase tracking-wider">
+                      {lang === 'es' ? 'Línea de Frescos' : lang === 'en' ? 'Fresh Line' : lang === 'pt' ? 'Linha de Frescos' : lang === 'de' ? 'Frische-Linie' : 'Gamme Frais'}
+                    </p>
+                    <p className="text-[10px] text-slate-400 mt-0.5">
+                      {lang === 'es' ? 'Despachos Aéreos' : lang === 'en' ? 'Direct Air Freight' : lang === 'pt' ? 'Fresco por Via Aérea' : lang === 'de' ? 'Direkte Luftfracht' : 'Fret Aérien Direct'}
+                    </p>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Right logistics image (Bleeds to the right edge of viewport on desktop, falls back to block card on mobile) */}
+        <div className="relative h-[350px] lg:h-auto min-h-[350px] overflow-hidden bg-ocean-black group lg:border-l lg:border-slate-900/50">
           <Image
             src="/images/container-ship.png"
             alt="Global Export Logistics Container Ship"
             fill
             priority
-            sizes="50vw"
+            sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover opacity-85 group-hover:scale-103 transition-transform duration-[6000ms]"
           />
           {/* Visual Overlay Blending */}
-          <div className="absolute inset-0 bg-gradient-to-r from-ocean-black via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ocean-black via-transparent to-transparent hidden lg:block" />
           <div className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-ocean-black to-transparent" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ocean-black to-transparent" />
-        </div>
-
-        {/* Centered Content Container */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full h-full min-h-[90vh] lg:min-h-screen grid grid-cols-1 lg:grid-cols-12 items-stretch">
-          
-          {/* Left text column & quick access links */}
-          <div className="col-span-12 lg:col-span-7 xl:col-span-6 flex flex-col justify-center py-16 lg:py-24 pr-0 lg:pr-8 xl:pr-12">
-            
-            <div className="max-w-2xl animate-slide-up">
-              <span className="inline-flex items-center px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-primary-400 bg-primary-950/60 border border-primary-800/40 mb-6">
-                {lang === 'es' ? 'Exportación Global' : 'Global Export'}
-              </span>
-              
-              <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight text-white leading-tight">
-                {lang === 'es' ? (
-                  <>
-                    Distribuidor internacional de <span className="text-primary-400">pescados y mariscos</span>
-                  </>
-                ) : lang === 'en' ? (
-                  <>
-                    International distributor of <span className="text-primary-400">premium seafood</span>
-                  </>
-                ) : lang === 'pt' ? (
-                  <>
-                    Distribuidor internacional de <span className="text-primary-400">peixes e frutos do mar</span>
-                  </>
-                ) : lang === 'de' ? (
-                  <>
-                    Internationaler Händler für <span className="text-primary-400">Fisch & Meeresfrüchte</span>
-                  </>
-                ) : (
-                  <>
-                    Distributeur international de <span className="text-primary-400">poissons et crustacés</span>
-                  </>
-                )}
-              </h1>
-              
-              <p className="mt-6 text-base sm:text-lg md:text-xl font-light text-slate-300 leading-relaxed max-w-xl">
-                {dict.hero.subtitle}
-              </p>
-              
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href={`/${lang}/productos`}
-                  className="flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl shadow-lg transition-all duration-200 text-white bg-ice-teal hover:bg-ice-teal-dark hover:shadow-xl hover:-translate-y-0.5 text-center"
-                >
-                  {dict.hero.ctaCatalog}
-                </Link>
-                <Link
-                  href={`/${lang}/contacto`}
-                  className="flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl border border-slate-700 hover:border-slate-500 text-white bg-white/5 hover:bg-white/10 transition-all duration-200 hover:-translate-y-0.5 text-center"
-                >
-                  {dict.hero.ctaContact}
-                </Link>
-              </div>
-
-              {/* Quick access cards (Lower Left Selector) */}
-              <div className="mt-12 md:mt-16 border-t border-slate-800/80 pt-8">
-                <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-4">
-                  {lang === 'es'
-                    ? 'Acceso Rápido por Conservación'
-                    : lang === 'en'
-                    ? 'Quick Access by Preservation'
-                    : lang === 'pt'
-                    ? 'Acesso Rápido por Conservação'
-                    : lang === 'de'
-                    ? 'Schnellzugriff nach Konservierung'
-                    : 'Accès Rapide par Conservation'}
-                </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Link
-                    href={`/${lang}/productos?filter=frozen`}
-                    className="group flex items-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-blue-950/60 text-blue-400 flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707-.707" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-white uppercase tracking-wider">
-                        {lang === 'es' ? 'Congelados' : lang === 'en' ? 'Frozen Line' : lang === 'pt' ? 'Congelados' : lang === 'de' ? 'Gefroren' : 'Surgelés'}
-                      </p>
-                      <p className="text-[10px] text-slate-400 mt-0.5">
-                        {lang === 'es' ? 'IQF e Interfoliados' : lang === 'en' ? 'IQF & Interleaved' : lang === 'pt' ? 'IQF e Interfolhados' : lang === 'de' ? 'IQF & Einzelblöcke' : 'IQF & Intercalaires'}
-                      </p>
-                    </div>
-                  </Link>
-
-                  <Link
-                    href={`/${lang}/productos?filter=fresh`}
-                    className="group flex items-center p-4 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all duration-300"
-                  >
-                    <div className="w-10 h-10 rounded-xl bg-emerald-950/60 text-emerald-400 flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-white uppercase tracking-wider">
-                        {lang === 'es' ? 'Línea de Frescos' : lang === 'en' ? 'Fresh Line' : lang === 'pt' ? 'Linha de Frescos' : lang === 'de' ? 'Frische-Linie' : 'Gamme Frais'}
-                      </p>
-                      <p className="text-[10px] text-slate-400 mt-0.5">
-                        {lang === 'es' ? 'Despachos Aéreos' : lang === 'en' ? 'Direct Air Freight' : lang === 'pt' ? 'Fresco por Via Aérea' : lang === 'de' ? 'Direkte Luftfracht' : 'Fret Aérien Direct'}
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Right logistics image column (Visible only on mobile/tablet as a premium block) */}
-          <div className="col-span-12 lg:hidden relative h-[350px] min-h-[350px] overflow-hidden bg-ocean-black group mb-12 rounded-3xl border border-white/5 shadow-xl">
-            <Image
-              src="/images/container-ship.png"
-              alt="Global Export Logistics Container Ship"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover opacity-85 group-hover:scale-103 transition-transform duration-[6000ms]"
-            />
-            {/* Visual Overlay Blending */}
-            <div className="absolute inset-x-0 top-0 h-20 bg-gradient-to-b from-ocean-black to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-ocean-black to-transparent" />
-          </div>
-
         </div>
       </section>
 
