@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "contact": "Contacto",
+    "requestQuote": "Solicitar Cotización"
+  },
+  "hero": {
+    "title": "Pescados y Mariscos Premium de la Patagonia Argentina al Mundo",
+    "subtitle": "Exportación y distribución mayorista B2B con los más altos estándares internacionales de frescura, calidad y trazabilidad garantizada.",
+    "ctaCatalog": "Ver Catálogo Mayorista",
+    "ctaContact": "Contacto Corporativo"
+  },
+  "whyUs": {
+    "title": "¿Por qué elegir a Ull Yasan?",
+    "subtitle": "Lideramos la exportación de productos marítimos del Atlántico Sur combinando excelencia operativa e integridad comercial.",
+    "traceability": {
+      "title": "Trazabilidad Total",
+      "description": "Monitoreo riguroso en cada etapa, desde la captura selectiva en las aguas frías del Atlántico Sur hasta la entrega final."
+    },
+    "quality": {
+      "title": "Calidad Premium",
+      "description": "Procesos avanzados de congelamiento a bordo e instalaciones homologadas bajo certificaciones internacionales estrictas."
+    },
+    "logistics": {
+      "title": "Logística Global",
+      "description": "Cadena de frío ininterrumpida y soporte aduanero experto para despachos eficientes a puertos de Europa, Asia y América."
+    },
+    "experience": {
+      "title": "Socio Estratégico B2B",
+      "description": "Soluciones comerciales flexibles y atención personalizada para cadenas de restaurantes premium, hoteles e importadores."
+    }
+  },
+  "categories": {
+    "title": "Nuestras Categorías",
+    "subtitle": "Explora nuestra oferta de exportación clasificada según el método de conservación y procesamiento.",
+    "frozenTitle": "Productos Congelados a Bordo/Tierra",
+    "frozenDesc": "Pescados y mariscos congelados de inmediato mediante tecnología IQF o bloque, conservando su textura, sabor y nutrientes originales.",
+    "freshTitle": "Línea de Frescos",
+    "freshDesc": "Capturas seleccionadas despachadas por aire de manera inmediata para garantizar la máxima frescura en destino."
+  },
+  "catalog": {
+    "title": "Catálogo de Exportación B2B",
+    "subtitle": "Selección premium de mariscos y pescados del Atlántico Sur para distribución internacional.",
+    "filterAll": "Todos los Productos",
+    "filterFrozen": "Congelados",
+    "filterFresh": "Frescos",
+    "viewDetails": "Ver Ficha Técnica",
+    "noProducts": "No se encontraron productos en esta categoría."
+  },
+  "productDetail": {
+    "scientificName": "Nombre científico:",
+    "technicalSheet": "Ficha Técnica de Exportación",
+    "fieldPresentation": "Presentación",
+    "fieldCatchZone": "Zona de Captura",
+    "fieldGlazing": "Glaseado",
+    "fieldPackaging": "Embalaje y Packaging",
+    "ctaWhatsApp": "Cotizar por WhatsApp",
+    "ctaContactForm": "Solicitar Cotización por Correo",
+    "backToCatalog": "Volver al Catálogo",
+    "whatsappMessageTemplate": "Hola Ull Yasan, me gustaría solicitar una cotización corporativa para el producto: {productName}. Por favor envíenme términos comerciales y volúmenes mínimos de compra.",
+    "formQuoteSubject": "Solicitud de Cotización Mayorista: {productName}"
+  },
+  "contact": {
+    "title": "Contacto B2B y Cotizaciones",
+    "subtitle": "Comunícate con nuestro departamento de exportación para recibir una propuesta comercial adaptada a tus necesidades operativas.",
+    "fieldName": "Nombre y Apellido",
+    "fieldCompany": "Nombre de la Empresa",
+    "fieldEmail": "Correo Electrónico Corporativo",
+    "fieldMessage": "Mensaje o Requerimientos de Cotización",
+    "submitButton": "Enviar Solicitud de Cotización",
+    "sending": "Enviando solicitud...",
+    "successMessage": "¡Gracias por contactarnos! Tu solicitud de cotización ha sido enviada con éxito. Nuestro equipo comercial se comunicará contigo a la brevedad.",
+    "errorMessage": "Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo o contáctanos por correo directo.",
+    "infoTitle": "Oficina Central de Exportaciones",
+    "infoAddress": "Puerto Madryn, Chubut, Argentina",
+    "infoPhone": "+54 (280) 445-XXXX",
+    "infoEmail": "exports@ullyasan.com",
+    "infoHours": "Lunes a Viernes: 08:00 - 17:00 (GMT-3)",
+    "formPlaceholderMessage": "Por favor, indique los productos de interés, volúmenes de compra estimados (toneladas/pallets) y puerto de destino..."
+  },
+  "footer": {
+    "tagline": "Calidad, frescura y confianza patagónica en los mercados más exigentes del mundo.",
+    "rights": "Todos los derechos reservados.",
+    "companyName": "Ull Yasan S.A."
+  },
+  "seo": {
+    "homeTitle": "Ull Yasan | Exportación Mayorista de Pescados y Mariscos Premium",
+    "homeDesc": "Distribuidora mayorista y exportadora argentina de mariscos y pescados patagónicos premium. Abastecemos importadores, cadenas de restaurantes y distribuidores en todo el mundo.",
+    "catalogTitle": "Catálogo de Mariscos y Pescados Mayorista | Ull Yasan",
+    "catalogDesc": "Explore nuestro catálogo de productos marinos premium congelados a bordo y frescos. Fichas técnicas de langostinos, calamar y merluza patagónica listos para importación.",
+    "contactTitle": "Contacto y Cotizaciones B2B | Ull Yasan",
+    "contactDesc": "Póngase en contacto con nuestro equipo comercial. Solicite cotizaciones por volumen para langostino patagónico, calamar illex y merluza hubbsi."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "contact": "Contact",
+    "requestQuote": "Demander un devis"
+  },
+  "hero": {
+    "title": "Poissons et Crustacés d'Exception de Patagonie dans le Monde Entier",
+    "subtitle": "Exportation et distribution en gros B2B avec les normes internationales les plus strictes en matière de fraîcheur, qualité et traçabilité.",
+    "ctaCatalog": "Voir le Catalogue de Gros",
+    "ctaContact": "Contact Entreprise"
+  },
+  "whyUs": {
+    "title": "Pourquoi Choisir Ull Yasan ?",
+    "subtitle": "Leader de l'exportation de produits de la mer sauvages de l'Atlantique Sud, combinant excellence opérationnelle et intégrité commerciale.",
+    "traceability": {
+      "title": "Traçabilité Totale",
+      "description": "Suivi rigoureux à chaque étape, de la pêche sélective dans les eaux froides de l'Atlantique Sud jusqu'à la livraison finale."
+    },
+    "quality": {
+      "title": "Qualité Premium",
+      "description": "Procédés de surgélation à bord de pointe et installations de traitement certifiées selon les normes internationales les plus exigeantes."
+    },
+    "logistics": {
+      "title": "Logistique Globale",
+      "description": "Garantie d'une chaîne du froid continue et expertise douanière pour des expéditions fluides vers les ports d'Europe, d'Asie et d'Amérique."
+    },
+    "experience": {
+      "title": "Partenaire B2B Privilégié",
+      "description": "Conditions commerciales flexibles et service personnalisé pour les chaînes de restauration premium, l'hôtellerie et les importateurs majeurs."
+    }
+  },
+  "categories": {
+    "title": "Nos Catégories",
+    "subtitle": "Découvrez notre gamme d'exportation B2B classée par méthode de conservation et de traitement.",
+    "frozenTitle": "Produits Surgelés à Bord ou à Terre",
+    "frozenDesc": "Poissons et fruits de mer congelés immédiatement grâce aux technologies IQF ou en bloc, préservant leur texture, leur goût et leurs nutriments d'origine.",
+    "freshTitle": "Gamme de Produits Frais",
+    "freshDesc": "Prises sélectionnées expédiées par fret aérien immédiat afin de garantir une fraîcheur absolue à destination."
+  },
+  "catalog": {
+    "title": "Catalogue d'Exportation B2B",
+    "subtitle": "Sélection premium de poissons et fruits de mer sauvages de l'Atlantique Sud pour la distribution mondiale.",
+    "filterAll": "Tous les Produits",
+    "filterFrozen": "Surgelés",
+    "filterFresh": "Frais",
+    "viewDetails": "Fiche Technique",
+    "noProducts": "Aucun produit trouvé dans cette catégorie."
+  },
+  "productDetail": {
+    "scientificName": "Nom scientifique :",
+    "technicalSheet": "Fiche de Spécifications d'Exportation",
+    "fieldPresentation": "Présentation",
+    "fieldCatchZone": "Zone de Pêche",
+    "fieldGlazing": "Vitrage (Glaçage)",
+    "fieldPackaging": "Emballage & Conditionnement",
+    "ctaWhatsApp": "Devis par WhatsApp",
+    "ctaContactForm": "Demander un Devis par E-mail",
+    "backToCatalog": "Retour au Catalogue",
+    "whatsappMessageTemplate": "Bonjour Ull Yasan, je souhaite obtenir un devis de gros pour le produit : {productName}. Merci de m'indiquer vos conditions commerciales et vos quantités minimales de commande.",
+    "formQuoteSubject": "Demande de Devis de Gros : {productName}"
+  },
+  "contact": {
+    "title": "Demandes de Devis et Contacts B2B",
+    "subtitle": "Contactez notre département export pour recevoir une proposition commerciale adaptée à vos besoins opérationnels.",
+    "fieldName": "Nom et Prénom",
+    "fieldCompany": "Nom de l'Entreprise",
+    "fieldEmail": "Adresse E-mail Professionnelle",
+    "fieldMessage": "Message ou Détails de la Demande",
+    "submitButton": "Envoyer la Demande de Devis",
+    "sending": "Envoi en cours...",
+    "successMessage": "Merci de nous avoir contactés ! Votre demande de devis a été envoyée avec succès. Notre équipe commerciale vous contactera dans les plus brefs délais.",
+    "errorMessage": "Une erreur est survenue lors de l'envoi du formulaire. Veuillez réessayer ou nous contacter directement par e-mail.",
+    "infoTitle": "Siège Social Export",
+    "infoAddress": "Puerto Madryn, Chubut, Argentine",
+    "infoPhone": "+54 (280) 445-XXXX",
+    "infoEmail": "exports@ullyasan.com",
+    "infoHours": "Lundi au Vendredi : 08h00 - 17h00 (GMT-3)",
+    "formPlaceholderMessage": "Veuillez préciser les produits d'intérêt, les volumes d'achat estimés (tonnes/palettes) et le port de destination souhaité..."
+  },
+  "footer": {
+    "tagline": "Qualité, fraîcheur et confiance patagoniennes au service des marchés les plus exigeants du monde.",
+    "rights": "Tous droits réservés.",
+    "companyName": "Ull Yasan S.A."
+  },
+  "seo": {
+    "homeTitle": "Ull Yasan | Exportation en Gros de Poissons et Fruits de Mer Premium",
+    "homeDesc": "Distributeur en gros et exportateur argentin de fruits de mer premium de Patagonie. Fournisseur d'importateurs, chaînes de restaurants et distributeurs dans le monde entier.",
+    "catalogTitle": "Catalogue de Poissons et Fruits de Mer en Gros | Ull Yasan",
+    "catalogDesc": "Parcourez notre gamme de poissons et fruits de mer congelés à bord et frais. Fiches d'exportation pour les crevettes de Patagonie, le calamar illex et le colin.",
+    "contactTitle": "Contact B2B & Devis Grossiste | Ull Yasan",
+    "contactDesc": "Contactez notre division export. Demandez des devis sur mesure pour les crevettes sauvages, le calamar illex et le colin d'Argentine."
+  }
+}

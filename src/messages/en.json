@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "contact": "Contact",
+    "requestQuote": "Request Quote"
+  },
+  "hero": {
+    "title": "Premium Wild-Caught Seafood from Argentina to the World",
+    "subtitle": "B2B export and wholesale distribution carrying the highest international standards of freshness, quality, and guaranteed traceability.",
+    "ctaCatalog": "View Wholesale Catalog",
+    "ctaContact": "Corporate Inquiry"
+  },
+  "whyUs": {
+    "title": "Why Choose Ull Yasan?",
+    "subtitle": "Leading the export of premium wild seafood from the cold South Atlantic with operational excellence and commercial integrity.",
+    "traceability": {
+      "title": "Full Traceability",
+      "description": "Rigorous monitoring at every stage, from selective wild harvesting in the cold South Atlantic waters to final delivery."
+    },
+    "quality": {
+      "title": "Premium Quality",
+      "description": "State-of-the-art sea-freezing processes and processing facilities fully certified under strict international standards."
+    },
+    "logistics": {
+      "title": "Global Logistics",
+      "description": "Continuous cold chain security and expert customs support for seamless shipping to European, Asian, and American ports."
+    },
+    "experience": {
+      "title": "B2B Strategic Partner",
+      "description": "Flexible commercial terms and personalized service for premium restaurant groups, hotel chains, and major importers."
+    }
+  },
+  "categories": {
+    "title": "Our Categories",
+    "subtitle": "Explore our B2B export range classified by processing and preservation methods.",
+    "frozenTitle": "Frozen-at-Sea / Land Products",
+    "frozenDesc": "Seafood frozen immediately using IQF or Block technology, preserving original texture, flavor, and rich nutritional value.",
+    "freshTitle": "Fresh Seafood Line",
+    "freshDesc": "Carefully selected landings dispatched via airfreight to guarantee maximum freshness at destination."
+  },
+  "catalog": {
+    "title": "B2B Export Catalog",
+    "subtitle": "Premium selection of wild-caught South Atlantic seafood for global distribution.",
+    "filterAll": "All Products",
+    "filterFrozen": "Frozen",
+    "filterFresh": "Fresh",
+    "viewDetails": "View Specifications",
+    "noProducts": "No products found in this category."
+  },
+  "productDetail": {
+    "scientificName": "Scientific name:",
+    "technicalSheet": "Export Specification Sheet",
+    "fieldPresentation": "Presentation",
+    "fieldCatchZone": "Catching Area",
+    "fieldGlazing": "Glazing",
+    "fieldPackaging": "Packaging & Box Specs",
+    "ctaWhatsApp": "Quote via WhatsApp",
+    "ctaContactForm": "Request Quote via Email",
+    "backToCatalog": "Back to Catalog",
+    "whatsappMessageTemplate": "Hello Ull Yasan, I would like to request a wholesale quote for: {productName}. Please provide commercial terms and minimum order quantities.",
+    "formQuoteSubject": "Wholesale Quote Request: {productName}"
+  },
+  "contact": {
+    "title": "B2B Inquiries & Quotations",
+    "subtitle": "Get in touch with our export department to receive a commercial proposal tailored to your operational requirements.",
+    "fieldName": "Full Name",
+    "fieldCompany": "Company Name",
+    "fieldEmail": "Corporate Email Address",
+    "fieldMessage": "Message or Specific Quote Details",
+    "submitButton": "Submit Quote Inquiry",
+    "sending": "Submitting request...",
+    "successMessage": "Thank you for contacting us! Your quote request was sent successfully. Our export sales team will reach out to you shortly.",
+    "errorMessage": "There was an error submitting the form. Please try again or reach out to us via direct email.",
+    "infoTitle": "Export Headquarters",
+    "infoAddress": "Puerto Madryn, Chubut, Argentina",
+    "infoPhone": "+54 (280) 445-XXXX",
+    "infoEmail": "exports@ullyasan.com",
+    "infoHours": "Monday to Friday: 08:00 AM - 05:00 PM (GMT-3)",
+    "formPlaceholderMessage": "Please specify the products you are interested in, estimated volumes (tons/pallets), and target port of destination..."
+  },
+  "footer": {
+    "tagline": "Patagonian quality, freshness, and trust served to the world's most demanding markets.",
+    "rights": "All rights reserved.",
+    "companyName": "Ull Yasan S.A."
+  },
+  "seo": {
+    "homeTitle": "Ull Yasan | Premium Seafood Wholesale Export Argentina",
+    "homeDesc": "Argentine wholesale distributor and exporter of premium Patagonian seafood. Supplying premium importers, restaurant chains, and distributors worldwide.",
+    "catalogTitle": "Premium Wild-Caught Seafood Catalog | Ull Yasan",
+    "catalogDesc": "Browse our range of sea-frozen and fresh wholesale seafood. Export sheets for Patagonian red shrimp, illex squid, and hubbsi hake ready for import.",
+    "contactTitle": "B2B Contact & Wholesale Quotes | Ull Yasan",
+    "contactDesc": "Get in touch with our export division. Request volume quotes for Patagonian shrimp, illex squid, and Argentine hake."
+  }
+}

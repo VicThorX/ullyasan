@@ -1,0 +1,95 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "products": "Produkte",
+    "contact": "Kontakt",
+    "requestQuote": "Angebot anfordern"
+  },
+  "hero": {
+    "title": "Erstklassiger Fisch & Meeresfrüchte aus Patagonien in die ganze Welt",
+    "subtitle": "B2B-Export und Großhandelsvertrieb nach höchsten internationalen Standards für Frische, Qualität und lückenlose Rückverfolgbarkeit.",
+    "ctaCatalog": "Großhandelskatalog ansehen",
+    "ctaContact": "Firmenkontakt"
+  },
+  "whyUs": {
+    "title": "Warum Ull Yasan wählen?",
+    "subtitle": "Wir sind führend im Export von Premium-Meeresfrüchten aus dem kalten Südatlantik durch operative Exzellenz und Integrität.",
+    "traceability": {
+      "title": "Volle Rückverfolgbarkeit",
+      "description": "Lückenlose Überwachung in jeder Phase – vom selektiven Wildfang in den kalten Gewässern des Südatlantiks bis zur Auslieferung."
+    },
+    "quality": {
+      "title": "Premium-Qualität",
+      "description": "Modernste Schockfrostung an Bord und zertifizierte Produktionsanlagen unter strengsten internationalen Lebensmittelstandards."
+    },
+    "logistics": {
+      "title": "Globale Logistik",
+      "description": "Unterbrechungsfreie Kühlkette und kompetente Zollabwicklung für den reibungslosen Versand in europäische, asiatische und amerikanische Häfen."
+    },
+    "experience": {
+      "title": "Strategischer B2B-Partner",
+      "description": "Flexible Konditionen und persönlicher Service für Premium-Gastronomieketten, Hotels und führende Importeure."
+    }
+  },
+  "categories": {
+    "title": "Unsere Kategorien",
+    "subtitle": "Entdecken Sie unser B2B-Exportangebot, unterteilt nach Verarbeitungs- und Konservierungsmethode.",
+    "frozenTitle": "An Bord/Land gefrorene Produkte",
+    "frozenDesc": "Meeresfrüchte, die sofort mit IQF- oder Blocktechnologie eingefroren werden, um ursprüngliche Textur, Geschmack und Nährwerte zu bewahren.",
+    "freshTitle": "Frische-Linie",
+    "freshDesc": "Sorgfältig ausgewählte Fänge, die sofort per Luftfracht versandt werden, um maximale Frische am Zielort zu garantieren."
+  },
+  "catalog": {
+    "title": "B2B-Exportkatalog",
+    "subtitle": "Erstklassige Auswahl an wild gefangenem Fisch und Meeresfrüchten aus dem Südatlantik für den globalen Vertrieb.",
+    "filterAll": "Alle Produkte",
+    "filterFrozen": "Gefroren",
+    "filterFresh": "Frisch",
+    "viewDetails": "Spezifikationen anzeigen",
+    "noProducts": "Keine Produkte in dieser Kategorie gefunden."
+  },
+  "productDetail": {
+    "scientificName": "Wissenschaftlicher Name:",
+    "technicalSheet": "Export-Spezifikationsblatt",
+    "fieldPresentation": "Präsentation",
+    "fieldCatchZone": "Fanggebiet",
+    "fieldGlazing": "Glasur",
+    "fieldPackaging": "Verpackung & Box-Details",
+    "ctaWhatsApp": "Angebot via WhatsApp",
+    "ctaContactForm": "Angebot per E-Mail anfordern",
+    "backToCatalog": "Zurück zum Katalog",
+    "whatsappMessageTemplate": "Hallo Ull Yasan, ich möchte gerne ein Großhandelsangebot für folgendes Produkt anfordern: {productName}. Bitte senden Sie mir die Konditionen und Mindestbestellmengen.",
+    "formQuoteSubject": "Großhandels-Angebotsanfrage: {productName}"
+  },
+  "contact": {
+    "title": "B2B-Anfragen & Angebote",
+    "subtitle": "Kontaktieren Sie unsere Exportabteilung, um ein maßgeschneidertes kommerzielles Angebot für Ihre betrieblichen Anforderungen zu erhalten.",
+    "fieldName": "Vor- und Nachname",
+    "fieldCompany": "Firmenname",
+    "fieldEmail": "Geschäftliche E-Mail-Adresse",
+    "fieldMessage": "Nachricht oder Angebotsdetails",
+    "submitButton": "Angebotsanfrage absenden",
+    "sending": "Wird gesendet...",
+    "successMessage": "Vielen Dank für Ihre Nachricht! Ihre Angebotsanfrage wurde erfolgreich übermittelt. Unser Export-Vertriebsteam wird sich in Kürze mit Ihnen in Verbindung setzen.",
+    "errorMessage": "Beim Absenden des Formulars ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.",
+    "infoTitle": "Export-Hauptsitz",
+    "infoAddress": "Puerto Madryn, Chubut, Argentinien",
+    "infoPhone": "+54 (280) 445-XXXX",
+    "infoEmail": "exports@ullyasan.com",
+    "infoHours": "Montag bis Freitag: 08:00 - 17:00 Uhr (GMT-3)",
+    "formPlaceholderMessage": "Bitte geben Sie die gewünschten Produkte, das geschätzte Einkaufsvolumen (Tonnen/Paletten) und den Zielhafen an..."
+  },
+  "footer": {
+    "tagline": "Qualität, Frische und Vertrauen aus Patagonien für die anspruchsvollsten Märkte der Welt.",
+    "rights": "Alle Rechte vorbehalten.",
+    "companyName": "Ull Yasan S.A."
+  },
+  "seo": {
+    "homeTitle": "Ull Yasan | Premium-Fisch & Meeresfrüchte Großhandel Export Argentinien",
+    "homeDesc": "Argentinischer Großhändler und Exporteur von Premium-Meeresfrüchten aus Patagonien. Belieferung von Importeuren, Restaurantketten und Distributoren weltweit.",
+    "catalogTitle": "Premium-Meeresfrüchte & Fisch Katalog | Ull Yasan",
+    "catalogDesc": "Durchsuchen Sie unser Angebot an schockgefrorenem und frischem Großhandels-Fisch. Spezifikationsblätter für patagonische Garnelen, Illex-Tintenfisch und Seehecht.",
+    "contactTitle": "B2B-Kontakt & Großhandelsangebote | Ull Yasan",
+    "contactDesc": "Kontaktieren Sie unser Export-Vertriebsteam. Fordern Sie Mengenangebote für patagonische Garnelen, Illex-Tintenfisch und Seehecht an."
+  }
+}
