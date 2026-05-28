@@ -87,7 +87,7 @@ export default async function WhoWeArePage({ params }: PageProps) {
             </div>
             
             {/* Core Stats Box */}
-            <div className="grid grid-cols-3 gap-4 pt-6 border-t border-ocean-900">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-6 border-t border-ocean-900">
               <div>
                 <p className="text-2xl sm:text-3xl font-bold text-primary-400 leading-none">FAO 41</p>
                 <p className="text-[10px] sm:text-xs font-semibold text-slate-500 uppercase tracking-wider mt-2">

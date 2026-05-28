@@ -108,13 +108,13 @@ export default function Footer({ lang, dict, navDict }: FooterProps) {
         </div>
 
         {/* Bottom copyright block */}
-        <div className="mt-12 pt-8 border-t border-ocean-900/60 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ocean-500 font-light">
+        <div className="mt-12 pt-8 border-t border-ocean-900/60 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-ocean-500 font-light text-center md:text-left">
           <div>
             &copy; {currentYear} {dict.companyName}. {dict.rights}
           </div>
-          <div className="flex space-x-6">
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
             <span>Patagonian Cold Water Harvest</span>
-            <span>·</span>
+            <span className="hidden sm:inline">·</span>
             <span>HACCP & FDA Standard Quality</span>
           </div>
         </div>
