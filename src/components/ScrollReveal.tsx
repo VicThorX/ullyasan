@@ -13,7 +13,7 @@ interface ScrollRevealProps {
   threshold?: number;
   rootMargin?: string;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: React.ElementType;
 }
 
 export default function ScrollReveal({
