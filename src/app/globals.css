@@ -315,12 +315,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   background-color: var(--color-ocean-black);
   color: #f1f5f9;
   overflow-x: hidden;
+  max-width: 100vw;
 }
 
 /* Custom Scrollbar */

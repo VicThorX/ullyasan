@@ -50,8 +50,8 @@ export default async function WhoWeArePage({ params }: PageProps) {
   return (
     <div className="pt-32 pb-16 md:pt-44 md:pb-24 bg-ocean-black min-h-screen text-slate-100 relative overflow-hidden">
       {/* Decorative Glow Effects */}
-      <div className="absolute top-1/4 right-0 w-[400px] h-[400px] rounded-full bg-ull-gold/5 blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-[500px] h-[500px] rounded-full bg-primary-500/5 blur-[140px] pointer-events-none" />
+      <div className="absolute top-1/4 right-0 w-[80vw] max-w-[400px] h-[400px] rounded-full bg-ull-gold/5 blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-0 w-[90vw] max-w-[500px] h-[500px] rounded-full bg-primary-500/5 blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-24 md:space-y-32">
         
