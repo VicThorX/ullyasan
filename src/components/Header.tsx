@@ -290,37 +290,40 @@ export default function Header({ lang, dict, cartDict }: HeaderProps) {
           </div>
         </div>
 
-        {/* Mobile Drawer Overlay */}
-        {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-[60px] bg-ocean-black z-40 animate-fade-in flex flex-col justify-between p-6">
-            <nav className="flex flex-col space-y-6 pt-4">
-              {navLinks.map((link) => {
-                const isActive = pathname === link.href;
-                return (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={`text-xl font-medium tracking-wide ${
-                      isActive ? 'text-primary-400 border-l-4 border-primary-500 pl-3' : 'text-ocean-200'
-                    }`}
-                  >
-                    {link.name}
-                  </Link>
-                );
-              })}
-            </nav>
-
-            <div className="mt-auto pb-10">
-              <Link
-                href={`/${lang}/contacto`}
-                className="flex items-center justify-center w-full py-4 text-base font-bold rounded-xl bg-ull-gold hover:bg-ull-gold-dark text-white shadow-lg transition-all duration-200"
-              >
-                {dict.requestQuote}
-              </Link>
-            </div>
-          </div>
-        )}
       </header>
+
+      {/* Mobile Drawer Overlay */}
+      {mobileMenuOpen && (
+        <div className="md:hidden fixed inset-0 top-[60px] bg-ocean-950 z-40 animate-fade-in flex flex-col justify-between p-6">
+          <nav className="flex flex-col space-y-6 pt-4">
+            {navLinks.map((link) => {
+              const isActive = pathname === link.href;
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`text-xl font-medium tracking-wide ${
+                    isActive ? 'text-primary-400 border-l-4 border-primary-500 pl-3' : 'text-ocean-200'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
+          </nav>
+
+          <div className="mt-auto pb-10">
+            <Link
+              href={`/${lang}/contacto`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center w-full py-4 text-base font-bold rounded-xl bg-ull-gold hover:bg-ull-gold-dark text-white shadow-lg transition-all duration-200"
+            >
+              {dict.requestQuote}
+            </Link>
+          </div>
+        </div>
+      )}
 
       {/* Global B2B Cart Drawer Sidebar */}
       <CartDrawer lang={lang} dict={cartDict} />
