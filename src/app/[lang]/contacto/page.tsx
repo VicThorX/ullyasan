@@ -46,18 +46,18 @@ export default async function ContactPage({ params, searchParams }: PageProps) {
   const dict = await getDictionary(lang);
 
   return (
-    <div className="pt-36 pb-16 md:pt-44 md:pb-24 bg-slate-50 min-h-[80vh]">
+    <div className="pt-36 pb-16 md:pt-44 md:pb-24 bg-ocean-black min-h-screen text-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Page Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-ice-teal bg-ice-teal-light mb-4">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest text-primary-400 bg-primary-950/60 border border-primary-800/40 mb-4">
             B2B Sales
           </span>
-          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-ocean-900 tracking-tight leading-tight">
+          <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight">
             {dict.contact.title}
           </h1>
-          <p className="mt-4 text-base sm:text-lg font-light text-slate-500 leading-relaxed">
+          <p className="mt-4 text-base sm:text-lg font-light text-slate-300 leading-relaxed">
             {dict.contact.subtitle}
           </p>
         </div>
@@ -133,8 +133,8 @@ export default async function ContactPage({ params, searchParams }: PageProps) {
             </div>
 
             {/* Premium Vector Graphics: South Atlantic Shipping Lanes */}
-            <div className="bg-white rounded-3xl border border-slate-100 shadow-lg p-6 flex flex-col space-y-4">
-              <p className="text-xs font-bold uppercase tracking-wider text-slate-400">
+            <div className="bg-ocean-950/40 rounded-3xl border border-ocean-800 shadow-xl p-6 flex flex-col space-y-4">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500">
                 {lang === 'es' ? 'Rutas de Exportación Global' : 'Global Shipping Corridor'}
               </p>
               

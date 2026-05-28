@@ -3,6 +3,7 @@ export interface NavigationDict {
   products: string;
   contact: string;
   requestQuote: string;
+  aboutUs: string;
 }
 
 export interface HeroDict {
@@ -91,6 +92,8 @@ export interface SEODict {
   catalogDesc: string;
   contactTitle: string;
   contactDesc: string;
+  aboutUsTitle: string;
+  aboutUsDesc: string;
 }
 
 export interface HomeDict {
@@ -100,6 +103,53 @@ export interface HomeDict {
   ctaTitle: string;
   ctaSubtitle: string;
   ctaButton: string;
+}
+
+export interface CartDict {
+  title: string;
+  empty: string;
+  emptySub: string;
+  presentation: string;
+  quantity: string;
+  unit: string;
+  notes: string;
+  notesPlaceholder: string;
+  remove: string;
+  clear: string;
+  checkoutWhatsApp: string;
+  checkoutEmail: string;
+  whatsappTemplate: string;
+  units: {
+    kg: string;
+    tons: string;
+    boxes: string;
+    pallets: string;
+  };
+  addedToQuote: string;
+  addToQuote: string;
+}
+
+export interface AboutUsPageDict {
+  title: string;
+  subtitle: string;
+  historyTitle: string;
+  historyText1: string;
+  historyText2: string;
+  missionTitle: string;
+  missionText: string;
+  visionTitle: string;
+  visionText: string;
+  valuesTitle: string;
+  valueSustainabilityTitle: string;
+  valueSustainabilityDesc: string;
+  valueQualityTitle: string;
+  valueQualityDesc: string;
+  valueTraceabilityTitle: string;
+  valueTraceabilityDesc: string;
+  valuePartnershipTitle: string;
+  valuePartnershipDesc: string;
+  infrastructureTitle: string;
+  infrastructureText: string;
 }
 
 export interface Dictionary {
@@ -113,4 +163,6 @@ export interface Dictionary {
   home: HomeDict;
   footer: FooterDict;
   seo: SEODict;
+  cart: CartDict;
+  aboutUsPage: AboutUsPageDict;
 }

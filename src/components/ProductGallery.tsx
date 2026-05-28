@@ -42,7 +42,7 @@ export default function ProductGallery({ images, name }: ProductGalleryProps) {
               onClick={() => setActiveIdx(idx)}
               className={`relative aspect-[4/3] rounded-xl overflow-hidden bg-slate-50 border-2 transition-all duration-200 ${
                 activeIdx === idx
-                  ? 'border-ice-teal ring-2 ring-ice-teal/20 scale-95 shadow-sm'
+                  ? 'border-ull-gold ring-2 ring-ull-gold/20 scale-95 shadow-sm'
                   : 'border-transparent hover:border-slate-300 hover:scale-98 opacity-75 hover:opacity-100'
               }`}
               aria-label={`View image ${idx + 1}`}

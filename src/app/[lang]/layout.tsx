@@ -3,6 +3,8 @@ import { Inter, Playfair_Display } from 'next/font/google';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Locale, getDictionary, locales } from '@/lib/dictionary';
+import { CartProvider } from '@/context/CartContext';
+import PageTransition from '@/components/PageTransition';
 
 // Premium Fonts Configuration
 const inter = Inter({
@@ -39,12 +41,16 @@ export default async function LocaleLayout({
       lang={activeLang}
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-slate-50 text-slate-900">
-        <Header lang={activeLang} dict={dict.nav} />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer lang={activeLang} dict={dict.footer} navDict={dict.nav} />
+      <body className="min-h-full flex flex-col font-sans bg-ocean-black text-slate-100">
+        <CartProvider>
+          <Header lang={activeLang} dict={dict.nav} cartDict={dict.cart} />
+          <main className="flex-grow">
+            <PageTransition>
+              {children}
+            </PageTransition>
+          </main>
+          <Footer lang={activeLang} dict={dict.footer} navDict={dict.nav} />
+        </CartProvider>
       </body>
     </html>
   );

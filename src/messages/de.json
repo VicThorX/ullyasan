@@ -3,7 +3,8 @@
     "home": "Startseite",
     "products": "Produkte",
     "contact": "Kontakt",
-    "requestQuote": "Angebot anfordern"
+    "requestQuote": "Angebot anfordern",
+    "aboutUs": "Über uns"
   },
   "hero": {
     "title": "Erstklassiger Fisch & Meeresfrüchte aus Patagonien in die ganze Welt",
@@ -98,6 +99,53 @@
     "catalogTitle": "Premium-Meeresfrüchte & Fisch Katalog | Ull Yasan",
     "catalogDesc": "Durchsuchen Sie unser Angebot an schockgefrorenem und frischem Großhandels-Fisch. Spezifikationsblätter für patagonische Garnelen, Illex-Tintenfisch und Seehecht.",
     "contactTitle": "B2B-Kontakt & Großhandelsangebote | Ull Yasan",
-    "contactDesc": "Kontaktieren Sie unser Export-Vertriebsteam. Fordern Sie Mengenangebote für patagonische Garnelen, Illex-Tintenfisch und Seehecht an."
+    "contactDesc": "Kontaktieren Sie unser Export-Vertriebsteam. Fordern Sie Mengenangebote für patagonische Garnelen, Illex-Tintenfisch und Seehecht an.",
+    "aboutUsTitle": "Über uns | Ull Yasan Premium Seafood",
+    "aboutUsDesc": "Erfahren Sie mehr über unsere Geschichte, Mission und unser Engagement für nachhaltige, erstklassige Wildfang-Meeresfrüchte aus dem argentinischen Patagonien."
+  },
+  "cart": {
+    "title": "B2B-Angebotsliste",
+    "empty": "Ihre Liste ist leer",
+    "emptySub": "Fügen Sie Produkte aus dem Katalog hinzu, um Ihre Großhandels-Angebotsanfrage zu erstellen.",
+    "presentation": "Präsentation",
+    "quantity": "Menge",
+    "unit": "Einheit",
+    "notes": "Zusätzliche Spezifikationen & Anforderungen",
+    "notesPlaceholder": "Geben Sie den Zielhafen, erforderliche Zusatzzertifikate oder Verpackungswünsche an...",
+    "remove": "Entfernen",
+    "clear": "Liste leeren",
+    "checkoutWhatsApp": "Anfrage via WhatsApp senden",
+    "checkoutEmail": "Per E-Mail senden",
+    "whatsappTemplate": "Hallo Ull Yasan! Ich möchte gerne ein kommerzielles Angebot für die folgenden Produkte anfordern:\n\n{items}\n\nZusätzliche Anforderungen / Zielort:\n{notes}\n\nBitte senden Sie mir die Großhandelskonditionen, Mindestbestellmengen und geschätzten Lieferzeiten.",
+    "units": {
+      "kg": "Kilogramm (kg)",
+      "tons": "Tonnen (Tons)",
+      "boxes": "Kartons (Boxes)",
+      "pallets": "Paletten"
+    },
+    "addedToQuote": "Auf Angebotsliste",
+    "addToQuote": "Auf Angebotsliste setzen"
+  },
+  "aboutUsPage": {
+    "title": "Über uns",
+    "subtitle": "Die Reinheit des Südatlantiks vereint mit globaler operativer Exzellenz",
+    "historyTitle": "Unsere Geschichte",
+    "historyText1": "Gegründet in den strategischen Häfen des argentinischen Patagoniens, entstand Ull Yasan aus der tiefen Überzeugung, die reinsten und exklusivsten Meeresressourcen des Südatlantiks (FAO 41) für die anspruchsvollsten internationalen Märkte zugänglich zu machen.",
+    "historyText2": "Im Laufe der Jahre sind wir gewachsen, indem wir traditionelles maritimes Know-how mit kontinuierlichen Investitionen in modernste Gefrierschiffe und international anerkannte Verarbeitungsbetriebe an Land kombiniert haben, was uns heute zu einem weltweit geschätzten und verlässlichen B2B-Partner macht.",
+    "missionTitle": "Unsere Mission",
+    "missionText": "Wildfang-Meeresfrüchte von höchster organoleptischer Qualität durch nachhaltige Fischerei und eine lückenlose Kühlkette zu liefern, um die betrieblichen Anforderungen von Premium-Importeuren, Distributoren und Gastronomieketten in Europa, Amerika und Asien flexibel zu bedienen.",
+    "visionTitle": "Unsere Vision",
+    "visionText": "Die patagonische Meeresfrüchte-Exportbranche als weltweiter Maßstab für geschäftliche Integrität, absolute Rückverfolgbarkeit und tiefen Respekt für die Nachhaltigkeit der Meere anzuführen.",
+    "valuesTitle": "Unsere geschäftlichen Säulen",
+    "valueSustainabilityTitle": "Aktive Nachhaltigkeit",
+    "valueSustainabilityDesc": "Wir halten uns strikt an offizielle Fangquoten und Schonzeiten und setzen selektive Fanggeräte ein, um das marine Ökosystem zu schützen.",
+    "valueQualityTitle": "Kompromisslose Qualität",
+    "valueQualityDesc": "Sofortige Verarbeitung und Schockfrostung an Bord direkt nach dem Fang. Alle unsere Schiffe und Betriebe arbeiten streng nach HACCP-Richtlinien und FDA-Vorschriften.",
+    "valueTraceabilityTitle": "Lückenlose Rückverfolgbarkeit",
+    "valueTraceabilityDesc": "Wir dokumentieren den Weg jeder Charge von den genauen GPS-Fangkoordinaten auf hoher See über die Entladekais bis hin zum Bestimmungshafen.",
+    "valuePartnershipTitle": "Strategischer B2B-Partner",
+    "valuePartnershipDesc": "Wir entwickeln maßgeschneiderte Logistiklösungen mit kontinuierlicher Kühlkettenüberwachung und engagierter Abwicklungsunterstützung.",
+    "infrastructureTitle": "Logistik- & Infrastrukturkapazitäten",
+    "infrastructureText": "Mit Sitz in Puerto Madryn, Chubut, haben wir direkten Zugang zu Tiefwasser-Kühlcontainerterminals. Unsere moderne eigene Flotte und die Verarbeitungsanlagen an Land ermöglichen es uns, sowohl auf dringende Luftfracht-Frischfischsendungen als auch auf großvolumige Seecontainer-Lieferungen hocheffizient zu reagieren."
   }
 }

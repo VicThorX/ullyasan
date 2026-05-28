@@ -3,7 +3,8 @@
     "home": "Home",
     "products": "Products",
     "contact": "Contact",
-    "requestQuote": "Request Quote"
+    "requestQuote": "Request Quote",
+    "aboutUs": "About Us"
   },
   "hero": {
     "title": "Premium Wild-Caught Seafood from Argentina to the World",
@@ -98,6 +99,53 @@
     "catalogTitle": "Premium Wild-Caught Seafood Catalog | Ull Yasan",
     "catalogDesc": "Browse our range of sea-frozen and fresh wholesale seafood. Export sheets for Patagonian red shrimp, illex squid, and hubbsi hake ready for import.",
     "contactTitle": "B2B Contact & Wholesale Quotes | Ull Yasan",
-    "contactDesc": "Get in touch with our export division. Request volume quotes for Patagonian shrimp, illex squid, and Argentine hake."
+    "contactDesc": "Get in touch with our export division. Request volume quotes for Patagonian shrimp, illex squid, and Argentine hake.",
+    "aboutUsTitle": "About Us | Ull Yasan Premium Seafood",
+    "aboutUsDesc": "Discover our story, mission, and dedication to sustainable wild-harvested premium seafood from Argentine Patagonia."
+  },
+  "cart": {
+    "title": "B2B Quote List",
+    "empty": "Your list is empty",
+    "emptySub": "Add products from the catalog to build your wholesale quotation request.",
+    "presentation": "Presentation",
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "notes": "Additional Specifications & Requirements",
+    "notesPlaceholder": "Indicate target port, special certifications needed, or custom packaging requirements...",
+    "remove": "Remove",
+    "clear": "Clear List",
+    "checkoutWhatsApp": "Send Inquiry via WhatsApp",
+    "checkoutEmail": "Send via Email",
+    "whatsappTemplate": "Hello Ull Yasan! I would like to request a commercial quote for the following products:\n\n{items}\n\nAdditional Requirements / Destination:\n{notes}\n\nPlease provide wholesale terms, minimum order volumes, and estimated lead times.",
+    "units": {
+      "kg": "Kilograms (kg)",
+      "tons": "Tons",
+      "boxes": "Boxes",
+      "pallets": "Pallets"
+    },
+    "addedToQuote": "Added to Quote",
+    "addToQuote": "Add to Quote"
+  },
+  "aboutUsPage": {
+    "title": "About Us",
+    "subtitle": "Connecting the Purity of the South Atlantic with Global Operational Excellence",
+    "historyTitle": "Our History",
+    "historyText1": "Established in the strategic ports of Argentine Patagonia, Ull Yasan was founded with a clear vision: to bring the purest, most exclusive marine resources of the South Atlantic (FAO 41) to the world's most demanding international markets.",
+    "historyText2": "Over the years, we have grown by blending traditional maritime expertise with continuous investments in advanced sea-freezing vessels and internationally accredited land-based processing facilities, positioning ourselves as a trusted B2B partner worldwide.",
+    "missionTitle": "Our Mission",
+    "missionText": "To supply wild-caught seafood of the highest organoleptic quality through sustainable harvesting and an uninterrupted cold chain, flexibly serving the operational needs of premium importers, distributors, and culinary chains across Europe, North America, and Asia.",
+    "visionTitle": "Our Vision",
+    "visionText": "To lead the Patagonian seafood export industry as a global benchmark for commercial integrity, absolute traceability, and deep respect for marine sustainability.",
+    "valuesTitle": "Our Core Business Pillars",
+    "valueSustainabilityTitle": "Active Sustainability",
+    "valueSustainabilityDesc": "We strictly adhere to official catch quotas and seasonal fishing bans, using selective gear that protects the marine ecosystem.",
+    "valueQualityTitle": "Uncompromised Quality",
+    "valueQualityDesc": "Processed and frozen-at-sea immediately. All our vessels and processing plants operate under strict HACCP guidelines and FDA regulations.",
+    "valueTraceabilityTitle": "Total Traceability",
+    "valueTraceabilityDesc": "We document the journey of every batch from the exact GPS harvest coordinates in the deep sea, through offloading docks, to the final destination port.",
+    "valuePartnershipTitle": "B2B Strategic Partner",
+    "valuePartnershipDesc": "Custom logistics plans featuring continuous cold chain monitoring, efficient cargo handling, and dedicated corporate customs support.",
+    "infrastructureTitle": "Logistics & Infrastructure Capacity",
+    "infrastructureText": "Operating out of Puerto Madryn, Chubut, we have direct access to deep-water cold storage container terminals. Our modern fleet and shore-based processing plants allow us to respond efficiently to both urgent air-freighted fresh shipments and volume B2B ocean container shipments."
   }
 }

@@ -3,7 +3,8 @@
     "home": "Accueil",
     "products": "Produits",
     "contact": "Contact",
-    "requestQuote": "Demander un devis"
+    "requestQuote": "Demander un devis",
+    "aboutUs": "Qui sommes-nous"
   },
   "hero": {
     "title": "Poissons et Crustacés d'Exception de Patagonie dans le Monde Entier",
@@ -98,6 +99,53 @@
     "catalogTitle": "Catalogue de Poissons et Fruits de Mer en Gros | Ull Yasan",
     "catalogDesc": "Parcourez notre gamme de poissons et fruits de mer congelés à bord et frais. Fiches d'exportation pour les crevettes de Patagonie, le calamar illex et le colin.",
     "contactTitle": "Contact B2B & Devis Grossiste | Ull Yasan",
-    "contactDesc": "Contactez notre division export. Demandez des devis sur mesure pour les crevettes sauvages, le calamar illex et le colin d'Argentine."
+    "contactDesc": "Contactez notre division export. Demandez des devis sur mesure pour les crevettes sauvages, le calamar illex et le colin d'Argentine.",
+    "aboutUsTitle": "Qui sommes-nous | Ull Yasan Premium Seafood",
+    "aboutUsDesc": "Découvrez notre histoire, notre mission et notre dévouement envers la pêche durable de poissons et crustacés sauvages en Patagonie argentine."
+  },
+  "cart": {
+    "title": "Liste de Devis B2B",
+    "empty": "Votre liste est vide",
+    "emptySub": "Ajoutez des produits du catalogue pour constituer votre demande de devis de gros.",
+    "presentation": "Présentation",
+    "quantity": "Quantité",
+    "unit": "Unité",
+    "notes": "Spécifications & Exigences Particulières",
+    "notesPlaceholder": "Indiquez le port de destination, les certifications requises ou les besoins de conditionnement spécifiques...",
+    "remove": "Retirer",
+    "clear": "Vider la Liste",
+    "checkoutWhatsApp": "Envoyer la Demande par WhatsApp",
+    "checkoutEmail": "Envoyer par E-mail",
+    "whatsappTemplate": "Bonjour Ull Yasan ! Je souhaite demander un devis commercial pour les produits suivants :\n\n{items}\n\nExigences Particulières / Destination :\n{notes}\n\nMerci de m'indiquer vos conditions commerciales, volumes minimums et délais de livraison estimatifs.",
+    "units": {
+      "kg": "Kilogrammes (kg)",
+      "tons": "Tonnes (Tons)",
+      "boxes": "Cartons (Boxes)",
+      "pallets": "Palettes"
+    },
+    "addedToQuote": "Ajouté au Devis",
+    "addToQuote": "Ajouter au Devis"
+  },
+  "aboutUsPage": {
+    "title": "Qui sommes-nous",
+    "subtitle": "Unir la Pureté de l'Atlantique Sud et l'Excellence Opérationnelle Globale",
+    "historyTitle": "Notre Histoire",
+    "historyText1": "Fondée dans les ports stratégiques de la Patagonie argentine, Ull Yasan est née de la conviction profonde d'apporter les ressources marines les plus pures et exclusives de l'Atlantique Sud (FAO 41) vers les marchés internationaux les plus exigeants.",
+    "historyText2": "Au fil des années, nous avons grandi en alliant le savoir-faire maritime traditionnel aux investissements constants dans des navires congélateurs de pointe et des usines de transformation à terre agréées mondialement, devenant un partenaire B2B de confiance dans le monde entier.",
+    "missionTitle": "Notre Mission",
+    "missionText": "Fournir des poissons et fruits de mer sauvages de la plus haute qualité organoleptique grâce à des captures durables et une chaîne du froid ininterrompue, en répondant avec flexibilité aux besoins des importateurs, distributeurs et chaînes de restauration en Europe, en Amérique et en Asie.",
+    "visionTitle": "Notre Vision",
+    "visionText": "Diriger l'exportation de produits de la mer de Patagonie en étant une référence mondiale d'intégrité commerciale, de traçabilité absolue et de respect profond de la durabilité marine.",
+    "valuesTitle": "Nos Piliers Fondamentaux",
+    "valueSustainabilityTitle": "Durabilité Active",
+    "valueSustainabilityDesc": "Nous respectons rigoureusement les quotas de capture et les périodes de fermeture, en utilisant des engins de pêche sélectifs qui préservent l'écosystème marin.",
+    "valueQualityTitle": "Qualité Sans Compromis",
+    "valueQualityDesc": "Traitement et surgélation à bord immédiats dès la capture. Toutes nos usines et navires opèrent selon les directives HACCP et les normes de la FDA.",
+    "valueTraceabilityTitle": "Traçabilité Absolue",
+    "valueTraceabilityDesc": "Nous documentons le parcours de chaque lot à partir des coordonnées GPS précises de capture en haute mer, jusqu'au déchargement et port de destination.",
+    "valuePartnershipTitle": "Partenaire Stratégique B2B",
+    "valuePartnershipDesc": "Nous élaborons des plans logistiques sur mesure avec un contrôle continu de la chaîne du froid et un soutien douanier corporatif dédié.",
+    "infrastructureTitle": "Capacités Logistiques & Infrastructures",
+    "infrastructureText": "Basés à Puerto Madryn, Chubut, nous disposons d'un accès direct aux terminaux conteneurs frigorifiques en eaux profondes. Notre flotte moderne et nos usines à terre nous permettent de répondre efficacement tant aux expéditions urgentes de produits frais par avion qu'aux commandes en volume par conteneurs maritimes consolidés."
   }
 }

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import ProductCard from './ProductCard';
+import ScrollReveal from './ScrollReveal';
 import { Product } from '@/types/product';
 import { Locale } from '@/lib/dictionary';
 import { CatalogDict } from '@/types/dictionary';
@@ -16,6 +17,7 @@ type FilterType = 'all' | 'frozen' | 'fresh';
 
 export default function CatalogGrid({ products, lang, dict }: CatalogGridProps) {
   const [activeFilter, setActiveFilter] = useState<FilterType>('all');
+  const [animationKey, setAnimationKey] = useState(0);
 
   // Synchronize with URL search parameter on client-side mount
   useEffect(() => {
@@ -27,6 +29,12 @@ export default function CatalogGrid({ products, lang, dict }: CatalogGridProps) 
       }
     }
   }, []);
+
+  const handleFilterChange = (filter: FilterType) => {
+    setActiveFilter(filter);
+    // Increment key to reset scroll reveal animations on filter change
+    setAnimationKey((prev) => prev + 1);
+  };
 
   const filteredProducts = products.filter((product) => {
     if (activeFilter === 'all') return true;
@@ -43,15 +51,15 @@ export default function CatalogGrid({ products, lang, dict }: CatalogGridProps) 
     <div className="flex flex-col space-y-12">
       {/* Filters buttons bar */}
       <div className="flex justify-center">
-        <div className="inline-flex p-1.5 rounded-2xl bg-slate-200/60 border border-slate-200/30 backdrop-blur-md shadow-inner">
+        <div className="inline-flex p-1.5 rounded-2xl bg-ocean-950/80 border border-ocean-800/60 backdrop-blur-md shadow-lg">
           {filterTabs.map((tab) => (
             <button
               key={tab.type}
-              onClick={() => setActiveFilter(tab.type)}
-              className={`px-6 py-3 rounded-xl text-sm font-semibold uppercase tracking-wider transition-all duration-300 ${
+              onClick={() => handleFilterChange(tab.type)}
+              className={`px-6 py-3 rounded-xl text-xs sm:text-sm font-semibold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                 activeFilter === tab.type
-                  ? 'bg-white text-ice-teal shadow-md'
-                  : 'text-slate-500 hover:text-ocean-900 hover:bg-white/40'
+                  ? 'bg-ull-gold text-white shadow-md'
+                  : 'text-slate-400 hover:text-white hover:bg-ocean-900/50'
               }`}
             >
               {tab.label}
@@ -60,7 +68,7 @@ export default function CatalogGrid({ products, lang, dict }: CatalogGridProps) 
         </div>
       </div>
 
-      {/* Grid of Product Cards */}
+      {/* Grid of Product Cards with staggered entrance */}
       {filteredProducts.length === 0 ? (
         <div className="text-center py-16 animate-fade-in">
           <div className="w-16 h-16 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 mx-auto mb-4">
@@ -71,14 +79,20 @@ export default function CatalogGrid({ products, lang, dict }: CatalogGridProps) 
           <p className="text-slate-500 font-light">{dict.noProducts}</p>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 animate-slide-up">
-          {filteredProducts.map((product) => (
-            <ProductCard
+        <div key={animationKey} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+          {filteredProducts.map((product, index) => (
+            <ScrollReveal
               key={product.slug}
-              product={product}
-              lang={lang}
-              dict={dict}
-            />
+              animation="slide-up"
+              delay={index * 100}
+              threshold={0.05}
+            >
+              <ProductCard
+                product={product}
+                lang={lang}
+                dict={dict}
+              />
+            </ScrollReveal>
           ))}
         </div>
       )}

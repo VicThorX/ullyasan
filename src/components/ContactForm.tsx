@@ -53,10 +53,10 @@ export default function ContactForm({
   };
 
   return (
-    <div className="bg-white rounded-3xl border border-slate-100 shadow-xl p-6 sm:p-10 transition-all duration-300">
+    <div className="bg-ocean-950/40 border border-ocean-800 shadow-2xl rounded-3xl p-6 sm:p-10 transition-all duration-300">
       {status === 'success' ? (
         <div className="flex flex-col items-center text-center py-8 animate-fade-in">
-          <div className="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-500 mb-6">
+          <div className="w-16 h-16 bg-emerald-950/50 border border-emerald-800/40 rounded-full flex items-center justify-center text-emerald-400 mb-6 shadow-lg shadow-emerald-950/20">
             <svg
               className="w-8 h-8"
               fill="none"
@@ -72,15 +72,15 @@ export default function ContactForm({
               />
             </svg>
           </div>
-          <h3 className="text-xl font-bold text-ocean-900 mb-3">
+          <h3 className="text-xl font-bold text-white mb-3">
             {dict.submitButton === 'Enviar Solicitud de Cotización' ? 'Solicitud Enviada' : 'Inquiry Submitted'}
           </h3>
-          <p className="text-slate-500 text-sm font-light leading-relaxed max-w-sm">
+          <p className="text-slate-400 text-sm font-light leading-relaxed max-w-sm">
             {dict.successMessage}
           </p>
           <button
             onClick={() => setStatus('idle')}
-            className="mt-8 px-6 py-2.5 rounded-lg border border-slate-200 hover:bg-slate-50 text-xs font-semibold text-slate-600 transition-colors duration-200"
+            className="mt-8 px-6 py-2.5 rounded-xl border border-ocean-800 bg-ocean-950/40 hover:bg-ocean-900/40 text-xs font-semibold text-slate-300 transition-all duration-200 cursor-pointer"
           >
             {lang === 'es' ? 'Enviar otro mensaje' : 'Send another inquiry'}
           </button>
@@ -101,7 +101,7 @@ export default function ContactForm({
                 value={formData.name}
                 onChange={handleChange}
                 disabled={status === 'sending'}
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:border-ice-teal focus:bg-white focus:outline-none transition-all duration-200"
+                className="w-full px-4 py-3 rounded-xl border border-ocean-800 bg-ocean-900/30 text-white placeholder-slate-650 text-sm focus:border-ull-gold focus:bg-ocean-900/50 focus:outline-none transition-all duration-200"
               />
             </div>
 
@@ -118,7 +118,7 @@ export default function ContactForm({
                 value={formData.company}
                 onChange={handleChange}
                 disabled={status === 'sending'}
-                className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:border-ice-teal focus:bg-white focus:outline-none transition-all duration-200"
+                className="w-full px-4 py-3 rounded-xl border border-ocean-800 bg-ocean-900/30 text-white placeholder-slate-650 text-sm focus:border-ull-gold focus:bg-ocean-900/50 focus:outline-none transition-all duration-200"
               />
             </div>
           </div>
@@ -136,7 +136,7 @@ export default function ContactForm({
               value={formData.email}
               onChange={handleChange}
               disabled={status === 'sending'}
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:border-ice-teal focus:bg-white focus:outline-none transition-all duration-200"
+              className="w-full px-4 py-3 rounded-xl border border-ocean-800 bg-ocean-900/30 text-white placeholder-slate-650 text-sm focus:border-ull-gold focus:bg-ocean-900/50 focus:outline-none transition-all duration-200"
             />
           </div>
 
@@ -151,19 +151,19 @@ export default function ContactForm({
               value={formData.productOfInterest}
               onChange={handleChange}
               disabled={status === 'sending'}
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:border-ice-teal focus:bg-white focus:outline-none transition-all duration-200 appearance-none cursor-pointer"
+              className="w-full px-4 py-3 rounded-xl border border-ocean-800 bg-ocean-900/30 text-white text-sm focus:border-ull-gold focus:bg-ocean-900/50 focus:outline-none appearance-none cursor-pointer"
               style={{
-                backgroundImage: `url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%2394a3b8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E")`,
+                backgroundImage: `url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%2338bdf8' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E")`,
                 backgroundPosition: 'right 1rem center',
                 backgroundSize: '1.25rem',
                 backgroundRepeat: 'no-repeat',
               }}
             >
-              <option value="general">
+              <option value="general" className="bg-ocean-950 text-white">
                 {lang === 'es' ? 'Consulta General de Importación' : 'General Import Inquiry'}
               </option>
               {products.map((p) => (
-                <option key={p.slug} value={p.slug}>
+                <option key={p.slug} value={p.slug} className="bg-ocean-950 text-white">
                   {p.name[lang]} ({p.scientificName})
                 </option>
               ))}
@@ -184,7 +184,7 @@ export default function ContactForm({
               onChange={handleChange}
               disabled={status === 'sending'}
               placeholder={dict.formPlaceholderMessage}
-              className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50/50 text-sm focus:border-ice-teal focus:bg-white focus:outline-none transition-all duration-200 resize-none"
+              className="w-full px-4 py-3 rounded-xl border border-ocean-800 bg-ocean-900/30 text-white placeholder-slate-600 text-sm focus:border-ull-gold focus:bg-ocean-900/50 focus:outline-none transition-all duration-200 resize-none"
             />
           </div>
 
@@ -192,7 +192,7 @@ export default function ContactForm({
           <button
             type="submit"
             disabled={status === 'sending'}
-            className="w-full flex items-center justify-center px-6 py-4 rounded-xl text-base font-semibold shadow-lg transition-all duration-200 text-white bg-ice-teal hover:bg-ice-teal-dark hover:shadow-xl focus:outline-none disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5"
+            className="w-full flex items-center justify-center px-6 py-4 rounded-xl text-base font-semibold shadow-lg shadow-ull-gold-dark/10 transition-all duration-200 text-white bg-ull-gold hover:bg-ull-gold-dark hover:shadow-xl focus:outline-none disabled:opacity-75 disabled:cursor-not-allowed hover:-translate-y-0.5 cursor-pointer"
           >
             {status === 'sending' ? (
               <span className="flex items-center space-x-2">

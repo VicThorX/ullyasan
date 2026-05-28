@@ -3,7 +3,8 @@
     "home": "Inicio",
     "products": "Productos",
     "contact": "Contacto",
-    "requestQuote": "Solicitar Cotización"
+    "requestQuote": "Solicitar Cotización",
+    "aboutUs": "Quiénes Somos"
   },
   "hero": {
     "title": "Pescados y Mariscos Premium de la Patagonia Argentina al Mundo",
@@ -98,6 +99,53 @@
     "catalogTitle": "Catálogo de Mariscos y Pescados Mayorista | Ull Yasan",
     "catalogDesc": "Explore nuestro catálogo de productos marinos premium congelados a bordo y frescos. Fichas técnicas de langostinos, calamar y merluza patagónica listos para importación.",
     "contactTitle": "Contacto y Cotizaciones B2B | Ull Yasan",
-    "contactDesc": "Póngase en contacto con nuestro equipo comercial. Solicite cotizaciones por volumen para langostino patagónico, calamar illex y merluza hubbsi."
+    "contactDesc": "Póngase en contacto con nuestro equipo comercial. Solicite cotizaciones por volumen para langostino patagónico, calamar illex y merluza hubbsi.",
+    "aboutUsTitle": "Quiénes Somos | Ull Yasan Premium Seafood",
+    "aboutUsDesc": "Conozca nuestra historia, nuestra misión y nuestro compromiso con la pesca sustentable de pescados y mariscos de calidad premium en la Patagonia argentina."
+  },
+  "cart": {
+    "title": "Lista de Cotización B2B",
+    "empty": "Su lista está vacía",
+    "emptySub": "Agregue productos desde el catálogo para configurar su solicitud de cotización mayorista.",
+    "presentation": "Presentación",
+    "quantity": "Cantidad",
+    "unit": "Unidad",
+    "notes": "Especificaciones y Requerimientos Adicionales",
+    "notesPlaceholder": "Indique puerto de destino, certificaciones adicionales requeridas o notas de empaque...",
+    "remove": "Quitar",
+    "clear": "Vaciar Lista",
+    "checkoutWhatsApp": "Enviar Cotización por WhatsApp",
+    "checkoutEmail": "Enviar por Correo Electrónico",
+    "whatsappTemplate": "Hola Ull Yasan! Me gustaría solicitar una cotización comercial para los siguientes productos:\n\n{items}\n\nRequerimientos Adicionales / Destino:\n{notes}\n\nPor favor, envíenme términos comerciales, volúmenes mínimos y plazos estimados de entrega.",
+    "units": {
+      "kg": "Kilogramos (kg)",
+      "tons": "Toneladas (Tons)",
+      "boxes": "Cajas (Boxes)",
+      "pallets": "Pallets"
+    },
+    "addedToQuote": "Añadido a Cotización",
+    "addToQuote": "Añadir a Cotización"
+  },
+  "aboutUsPage": {
+    "title": "Quiénes Somos",
+    "subtitle": "Uniendo la pureza del Atlántico Sur con la excelencia operativa global",
+    "historyTitle": "Nuestra Historia",
+    "historyText1": "Fundada en los puertos estratégicos de la Patagonia argentina, Ull Yasan nació con la convicción de llevar las riquezas marinas más puras y exclusivas del Atlántico Sur (FAO 41) a los mercados internacionales más exigentes.",
+    "historyText2": "A lo largo de los años, hemos crecido combinando la experiencia marítima tradicional con inversiones constantes en tecnologías avanzadas de congelamiento a bordo e instalaciones de procesamiento en tierra homologadas internacionalmente, posicionándonos como un socio B2B confiable a nivel mundial.",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Proveer pescados y mariscos salvajes de la más alta calidad organoléptica mediante capturas sostenibles y una cadena de frío ininterrumpida, satisfaciendo de forma flexible las necesidades operativas de importadores, distribuidores y cadenas culinarias en Europa, América y Asia.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Liderar la exportación pesquera de la Patagonia como sinónimo global de integridad comercial, trazabilidad absoluta y profundo respeto por la sustentabilidad marina.",
+    "valuesTitle": "Nuestros Pilares Comerciales",
+    "valueSustainabilityTitle": "Sustentabilidad Activa",
+    "valueSustainabilityDesc": "Respetamos rigurosamente las cuotas oficiales de captura y los períodos de veda, utilizando artes de pesca selectivas que protegen el ecosistema marino.",
+    "valueQualityTitle": "Calidad Sin Concesiones",
+    "valueQualityDesc": "Procesamos y congelamos en origen de inmediato. Todas nuestras plantas y buques operan bajo estrictas directrices HACCP y normas FDA.",
+    "valueTraceabilityTitle": "Trazabilidad Total",
+    "valueTraceabilityDesc": "Documentamos el recorrido de cada lote desde las coordenadas geográficas exactas de captura en alta mar hasta el muelle de descarga y puerto de destino.",
+    "valuePartnershipTitle": "Socio Estratégico B2B",
+    "valuePartnershipDesc": "Diseñamos soluciones logísticas a medida con despachos eficientes, cadena de frío ininterrumpida y soporte aduanero corporativo.",
+    "infrastructureTitle": "Capacidad Logística e Infraestructura",
+    "infrastructureText": "Operamos desde Puerto Madryn, Chubut, con acceso directo a terminales de carga de congelados de aguas profundas. Contamos con una flota propia y plantas de procesamiento en tierra que nos permiten responder tanto a despachos aéreos de frescos urgentes como a envíos a granel en contenedores refrigerados consolidados."
   }
 }

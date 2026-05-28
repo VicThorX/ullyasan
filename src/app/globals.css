@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-50: #f0f7ff;
-  --color-primary-100: #e0f2fe;
-  --color-primary-200: #bae6fd;
-  --color-primary-300: #7dd3fc;
-  --color-primary-400: #38bdf8;
-  --color-primary-500: #0ea5e9;
-  --color-primary-600: #0284c7;
-  --color-primary-700: #0369a1;
-  --color-primary-800: #075985;
-  --color-primary-900: #0c4a6e;
-  --color-primary-950: #032b45;
+  /* Primary - Cyan from Logo */
+  --color-primary-50: #e6f9fa;
+  --color-primary-100: #c1eff3;
+  --color-primary-200: #8ae0e8;
+  --color-primary-300: #4ecbd8;
+  --color-primary-400: #1ab0c1;
+  --color-primary-500: #0cb2c0; /* Base Logo Cyan */
+  --color-primary-600: #0a8e9e;
+  --color-primary-700: #0a727f;
+  --color-primary-800: #0e5b66;
+  --color-primary-900: #104b55;
+  --color-primary-950: #083139;
 
-  /* Premium Ocean Palette */
+  /* Premium Ocean Palette (Backgrounds) */
   --color-ocean-50: #f4f7fa;
   --color-ocean-100: #e9eff5;
   --color-ocean-200: #d8e4ef;
@@ -26,10 +27,10 @@
   --color-ocean-950: #051429;
   --color-ocean-black: #020c1b;
 
-  /* Custom Accents */
-  --color-ice-teal: #0d9488;
-  --color-ice-teal-dark: #0f766e;
-  --color-ice-teal-light: #ccfbf1;
+  /* Custom Accents - Gold from Logo */
+  --color-ull-gold: #fbb03b;
+  --color-ull-gold-dark: #df931b;
+  --color-ull-gold-light: #fcd58a;
 
   /* Standard theme mapping overrides */
   --color-background: #ffffff;
@@ -41,6 +42,10 @@
   --animate-slide-down: slide-down 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   --animate-scale-up: scale-up 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* ============================================
+   BASE KEYFRAMES
+   ============================================ */
 
 @keyframes fade-in {
   from { opacity: 0; }
@@ -62,13 +67,259 @@
   to { transform: scale(1); opacity: 1; }
 }
 
+/* ============================================
+   SCROLL REVEAL SYSTEM
+   ============================================ */
+
+.scroll-hidden {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+.scroll-hidden[data-animation="fade-in"] {
+  opacity: 0;
+}
+
+.scroll-hidden[data-animation="slide-up"] {
+  transform: translateY(60px);
+}
+
+.scroll-hidden[data-animation="slide-down"] {
+  transform: translateY(-40px);
+}
+
+.scroll-hidden[data-animation="slide-left"] {
+  transform: translateX(80px);
+}
+
+.scroll-hidden[data-animation="slide-right"] {
+  transform: translateX(-80px);
+}
+
+.scroll-hidden[data-animation="scale-up"] {
+  transform: scale(0.85);
+}
+
+.scroll-hidden[data-animation="blur-in"] {
+  filter: blur(12px);
+  transform: translateY(20px);
+}
+
+.scroll-visible {
+  opacity: 1 !important;
+  transform: translateY(0) translateX(0) scale(1) !important;
+  filter: blur(0) !important;
+  transition:
+    opacity var(--reveal-duration, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    transform var(--reveal-duration, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+    filter var(--reveal-duration, 0.8s) cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s);
+}
+
+/* ============================================
+   TEXT REVEAL ANIMATION
+   ============================================ */
+
+@keyframes text-reveal-word {
+  from {
+    opacity: 0;
+    transform: translateY(100%) rotateX(-80deg);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0deg);
+    filter: blur(0);
+  }
+}
+
+.text-reveal-word {
+  display: inline-block;
+  opacity: 0;
+  animation: text-reveal-word 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: bottom center;
+}
+
+/* ============================================
+   WAVE DIVIDER ANIMATION
+   ============================================ */
+
+@keyframes wave-flow {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.wave-layer {
+  animation: wave-flow var(--wave-speed, 12s) linear infinite;
+  will-change: transform;
+}
+
+/* ============================================
+   INFINITE MARQUEE
+   ============================================ */
+
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee-scroll var(--marquee-speed, 30s) linear infinite;
+  will-change: transform;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ============================================
+   ANIMATED GRADIENT BLOBS (Aurora/Ocean)
+   ============================================ */
+
+@keyframes blob-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(80px, -60px) scale(1.1); }
+  50% { transform: translate(-40px, 40px) scale(0.95); }
+  75% { transform: translate(60px, 80px) scale(1.05); }
+}
+
+@keyframes blob-float-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(-70px, 50px) scale(1.08); }
+  50% { transform: translate(50px, -30px) scale(0.92); }
+  75% { transform: translate(-30px, -70px) scale(1.12); }
+}
+
+@keyframes blob-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, 70px) scale(1.15); }
+  66% { transform: translate(-60px, -40px) scale(0.9); }
+}
+
+.gradient-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  will-change: transform;
+  mix-blend-mode: screen;
+}
+
+.gradient-blob-1 {
+  animation: blob-float-1 25s ease-in-out infinite;
+}
+
+.gradient-blob-2 {
+  animation: blob-float-2 30s ease-in-out infinite;
+}
+
+.gradient-blob-3 {
+  animation: blob-float-3 35s ease-in-out infinite;
+}
+
+/* ============================================
+   TILT CARD SHINE EFFECT
+   ============================================ */
+
+.tilt-shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    rgba(56, 189, 248, 0.08) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.tilt-card:hover .tilt-shine {
+  opacity: 1;
+}
+
+/* ============================================
+   GPU-Accelerated Deep-Sea Floating Particles
+   ============================================ */
+
+@keyframes float-particle {
+  0% {
+    transform: translateY(110vh) translateX(0) scale(0.3);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  50% {
+    transform: translateY(50vh) translateX(30px) scale(0.7);
+    opacity: 0.35;
+  }
+  90% {
+    opacity: 0.15;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(-20px) scale(1);
+    opacity: 0;
+  }
+}
+
+.ocean-particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, rgba(13, 148, 136, 0.05) 60%, transparent 100%);
+  pointer-events: none;
+  animation: float-particle var(--duration) ease-in-out var(--delay) infinite;
+  will-change: transform, opacity;
+}
+
+/* ============================================
+   PAGE TRANSITION
+   ============================================ */
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition-enter {
+  animation: page-enter 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ============================================
+   SHIMMER / LOADING
+   ============================================ */
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ============================================
+   COUNTER PULSE
+   ============================================ */
+
+@keyframes counter-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: #f8fafc;
-  color: #0f172a;
+  background-color: var(--color-ocean-black);
+  color: #f1f5f9;
   overflow-x: hidden;
 }
 
@@ -77,12 +328,45 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #020c1b;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #1f354d;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #0d9488;
+}
+
+/* ============================================
+   ACCESSIBILITY: Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-hidden {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .scroll-visible {
+    transition: none !important;
+  }
+
+  .text-reveal-word {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .wave-layer,
+  .marquee-track,
+  .gradient-blob,
+  .ocean-particle {
+    animation: none !important;
+  }
+
+  .page-transition-enter {
+    animation: none !important;
+  }
 }

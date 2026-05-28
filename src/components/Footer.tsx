@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Locale } from '@/lib/dictionary';
 import { FooterDict, NavigationDict } from '@/types/dictionary';
+import DynamicMap from '@/components/DynamicMap';
 
 interface FooterProps {
   lang: Locale;
@@ -16,6 +17,8 @@ export default function Footer({ lang, dict, navDict }: FooterProps) {
   return (
     <footer className="bg-ocean-black border-t border-ocean-900 text-ocean-300 py-12 md:py-16 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           
           {/* Brand block */}
@@ -43,6 +46,11 @@ export default function Footer({ lang, dict, navDict }: FooterProps) {
               <li>
                 <Link href={`/${lang}/productos`} className="hover:text-primary-400 transition-colors">
                   {navDict.products}
+                </Link>
+              </li>
+              <li>
+                <Link href={`/${lang}/quienes-somos`} className="hover:text-primary-400 transition-colors">
+                  {navDict.aboutUs}
                 </Link>
               </li>
               <li>
@@ -82,6 +90,21 @@ export default function Footer({ lang, dict, navDict }: FooterProps) {
             </ul>
           </div>
 
+        </div>
+
+        {/* Interactive Map Section */}
+        <div className="mt-16 mb-8 w-full">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-primary-400">
+              {lang === 'es' ? 'Presencia Operativa' : 'Operational Presence'}
+            </h3>
+            <span className="px-3 py-1 bg-ocean-900 border border-ocean-800 rounded-full text-[10px] text-ocean-400 uppercase tracking-widest font-bold">
+              Argentina
+            </span>
+          </div>
+          <div className="w-full h-[300px] sm:h-[400px]">
+            <DynamicMap lang={lang} />
+          </div>
         </div>
 
         {/* Bottom copyright block */}

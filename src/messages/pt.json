@@ -3,7 +3,8 @@
     "home": "Início",
     "products": "Produtos",
     "contact": "Contato",
-    "requestQuote": "Solicitar Cotação"
+    "requestQuote": "Solicitar Cotação",
+    "aboutUs": "Quem Somos"
   },
   "hero": {
     "title": "Peixes e Frutos do Mar Premium da Patagônia Argentina para o Mundo",
@@ -96,8 +97,55 @@
     "homeTitle": "Ull Yasan | Exportação por Atacado de Peixes e Frutos do Mar Premium",
     "homeDesc": "Distribuidora atacadista e exportadora argentina de peixes e frutos do mar premium da Patagônia. Abastecemos importadores, redes de restaurantes e distribuidores no mundo todo.",
     "catalogTitle": "Catálogo de Frutos do Mar por Atacado | Ull Yasan",
-    "catalogDesc": "Explore nosso catálogo de produtos marinhos premium congelados e frescos. Fichas técnicas de camarão, lula e pescada prontos para importação.",
+    "catalogDesc": "Explore nosso catálogo de produtos marinos premium congelados e frescos. Fichas técnicas de camarão, lula e pescada prontos para importação.",
     "contactTitle": "Contato e Cotações B2B | Ull Yasan",
-    "contactDesc": "Entre em contato com nossa equipe comercial. Solicite cotações por volume para camarão patagônico, lula illex e pescada hubbsi."
+    "contactDesc": "Entre em contato com nossa equipe comercial. Solicite cotações por volume para camarão patagônico, lula illex e pescada hubbsi.",
+    "aboutUsTitle": "Quem Somos | Ull Yasan Premium Seafood",
+    "aboutUsDesc": "Conheça nossa história, missão e compromisso com a pesca sustentável de peixes e frutos do mar da Patagônia argentina."
+  },
+  "cart": {
+    "title": "Lista de Cotação B2B",
+    "empty": "Sua lista está vazia",
+    "emptySub": "Adicione produtos do catálogo para configurar sua solicitação de cotação atacadista.",
+    "presentation": "Apresentação",
+    "quantity": "Quantidade",
+    "unit": "Unidade",
+    "notes": "Especificações e Requisitos Adicionais",
+    "notesPlaceholder": "Indique porto de destino, certificações necessárias ou notas de embalagem...",
+    "remove": "Remover",
+    "clear": "Limpar Lista",
+    "checkoutWhatsApp": "Enviar Cotação pelo WhatsApp",
+    "checkoutEmail": "Enviar por E-mail",
+    "whatsappTemplate": "Olá Ull Yasan! Gostaria de solicitar uma cotação comercial para os seguintes produtos:\n\n{items}\n\nRequisitos Adicionais / Destino:\n{notes}\n\nPor favor, enviem-me termos comerciais, volumes mínimos e prazos estimados de entrega.",
+    "units": {
+      "kg": "Quilogramas (kg)",
+      "tons": "Toneladas (Tons)",
+      "boxes": "Caixas (Boxes)",
+      "pallets": "Paletes"
+    },
+    "addedToQuote": "Adicionado à Cotação",
+    "addToQuote": "Adicionar à Cotação"
+  },
+  "aboutUsPage": {
+    "title": "Quem Somos",
+    "subtitle": "Unindo a Pureza do Atlântico Sul com a Excelência Operacional Global",
+    "historyTitle": "Nossa História",
+    "historyText1": "Fundada nos portos estratégicos da Patagônia argentina, a Ull Yasan nasceu com a convicção de levar as riquezas marinhas mais puras e exclusivas do Atlântico Sul (FAO 41) aos mercados internacionais mais exigentes.",
+    "historyText2": "Ao longo dos anos, crescemos combinando a experiência marítima tradicional com investimentos constantes em tecnologias avançadas de congelamento a bordo e instalações de processamento em terra homologadas internacionalmente, posicionando-nos como um parceiro B2B confiável a nível mundial.",
+    "missionTitle": "Nossa Missão",
+    "missionText": "Fornecer peixes e frutos do mar selvagens da mais alta qualidade organoléptica por meio de capturas sustentáveis e uma cadeia de frio ininterrupta, satisfazendo de forma flexível as necessidades operacionais de importadores, distribuidores e redes gastronômicas na Europa, América e Ásia.",
+    "visionTitle": "Nossa Visão",
+    "visionText": "Liderar a exportação pesqueira da Patagônia como sinônimo global de integridade comercial, rastreabilidade absoluta e profundo respeito pela sustentabilidade marinha.",
+    "valuesTitle": "Nossos Pilares Comerciais",
+    "valueSustainabilityTitle": "Sustentabilidade Ativa",
+    "valueSustainabilityDesc": "Respeitamos rigorosamente as cotas oficiais de captura e períodos de defeso, utilizando artes de pesca seletivas que protegem o ecossistema marinho.",
+    "valueQualityTitle": "Qualidade Inabalável",
+    "valueQualityDesc": "Processamos e congelamos na origem de imediato. Todas as nossas plantas e navios operam sob rígidas diretrizes HACCP e normas FDA.",
+    "valueTraceabilityTitle": "Rastreabilidade Total",
+    "valueTraceabilityDesc": "Documentamos o caminho de cada lote desde as coordenadas geográficas exatas de captura em alto mar até o porto de desembarque e destino final.",
+    "valuePartnershipTitle": "Parceiro Estratégico B2B",
+    "valuePartnershipDesc": "Desenvolvemos soluções logísticas sob medida com cadeia de frio contínua e suporte aduaneiro corporativo dedicado.",
+    "infrastructureTitle": "Capacidade Logística e Infraestrutura",
+    "infrastructureText": "Operamos a partir de Puerto Madryn, Chubut, com acesso direto a terminais de carga de congelados de águas profundas. Contamos com frota própria e plantas de processamento que nos permitem responder eficientemente tanto a despachos aéreos de frescos urgentes quanto a cotações de volume em contêineres refrigerados consolidados."
   }
 }
