@@ -394,7 +394,7 @@ export default async function HomePage({ params }: PageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
             
             {/* Port Drone Photo Left — Parallax */}
-            <ScrollReveal animation="slide-right" delay={0} className="col-span-12 lg:col-span-6">
+            <ScrollReveal animation="slide-right" delay={0} className="col-span-1 lg:col-span-6">
               <div className="relative h-[380px] sm:h-[480px] lg:h-[550px] rounded-3xl overflow-hidden shadow-2xl group border border-slate-800">
                 <ParallaxImage
                   src="/images/port-drone.png"
@@ -412,7 +412,7 @@ export default async function HomePage({ params }: PageProps) {
             </ScrollReveal>
 
             {/* Content Right */}
-            <div className="col-span-12 lg:col-span-6 flex flex-col justify-center">
+            <div className="col-span-1 lg:col-span-6 flex flex-col justify-center">
               <ScrollReveal animation="fade-in" delay={200}>
                 <span className="text-xs font-bold uppercase tracking-widest text-primary-400 mb-3 block">
                   {lang === 'es' ? 'Argentina al Mundo' : 'Argentine Heritage'}

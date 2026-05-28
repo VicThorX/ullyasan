@@ -48,7 +48,7 @@ export default async function WhoWeArePage({ params }: PageProps) {
   const pageDict = dict.aboutUsPage;
 
   return (
-    <div className="pt-32 pb-16 md:pt-44 md:pb-24 bg-ocean-black min-h-screen text-slate-100 relative overflow-hidden">
+    <div className="pt-32 pb-16 md:pt-44 md:pb-24 bg-ocean-black min-h-screen text-slate-100 relative overflow-hidden w-full">
       {/* Decorative Glow Effects */}
       <div className="absolute top-1/4 right-0 w-[80vw] max-w-[400px] h-[400px] rounded-full bg-ull-gold/5 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-1/4 left-0 w-[90vw] max-w-[500px] h-[500px] rounded-full bg-primary-500/5 blur-[140px] pointer-events-none" />
@@ -72,7 +72,7 @@ export default async function WhoWeArePage({ params }: PageProps) {
         {/* 2. Story Grid (Split layout) */}
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* History Description */}
-          <div className="col-span-12 lg:col-span-6 space-y-6 animate-slide-up">
+          <div className="col-span-1 lg:col-span-6 space-y-6 animate-slide-up">
             <span className="text-xs font-bold uppercase tracking-widest text-ull-gold">
               {lang === 'es' ? 'Nuestras Raíces' : 'Our Roots'}
             </span>
@@ -110,7 +110,7 @@ export default async function WhoWeArePage({ params }: PageProps) {
           </div>
 
           {/* Port graphic / Drone view on the right */}
-          <div className="col-span-12 lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-ocean-800 animate-fade-in group">
+          <div className="col-span-1 lg:col-span-6 relative h-[380px] sm:h-[480px] rounded-3xl overflow-hidden shadow-2xl border border-ocean-800 animate-fade-in group">
             <Image
               src="/images/port-drone.png"
               alt="Ull Yasan Patagonian Harbor Operations"
