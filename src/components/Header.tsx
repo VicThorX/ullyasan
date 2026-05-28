@@ -292,7 +292,7 @@ export default function Header({ lang, dict, cartDict }: HeaderProps) {
 
         {/* Mobile Drawer Overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-[60px] bg-ocean-black/95 backdrop-blur-lg z-40 animate-fade-in flex flex-col justify-between p-6">
+          <div className="md:hidden fixed inset-0 top-[60px] bg-ocean-black z-40 animate-fade-in flex flex-col justify-between p-6">
             <nav className="flex flex-col space-y-6 pt-4">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
